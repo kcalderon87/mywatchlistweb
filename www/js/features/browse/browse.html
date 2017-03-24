@@ -1,0 +1,27 @@
+<ion-view view-title="Browse">
+  <ion-content>
+
+  <ion-list>
+
+  <ion-item 
+    
+    collection-repeat="tvshow in BrowseVM.schedule" 
+    item-width="48%"
+    item-height="355px">
+  
+ 
+    <tv-show 
+      tvshow-data="tvshow" 
+      list="BrowseVM.isListView">
+    </tv-show>
+
+
+   </ion-item>
+
+   </ion-list>
+
+
+  </ion-content>
+
+
+</ion-view>

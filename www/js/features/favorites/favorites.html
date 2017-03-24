@@ -1,0 +1,26 @@
+<ion-view view-title="Favorites">
+  <ion-content>
+
+	  <ion-list>
+
+	  <ion-item 
+	    
+	    collection-repeat="tvshow in FavoritesVM.schedule" 
+	    item-width="48%"
+	    item-height="385px">
+	
+	    <tv-show-favorites
+	      tvshowfavorites-data="tvshow" 
+	      list="FavoritesVM.isListView">
+	    </tv-show-favorites>
+
+
+	   </ion-item>
+
+	   </ion-list>
+
+
+  </ion-content>
+
+
+</ion-view>
