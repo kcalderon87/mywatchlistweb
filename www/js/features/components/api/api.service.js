@@ -6,7 +6,7 @@ function ApiService($http) {
     var shows = [];
 	
 	function getShow(imDB) {
-		return $http.get('http://api.tvmaze.com/lookup/shows?imdb=' + imDB)
+		return $http.get('https://api.tvmaze.com/lookup/shows?imdb=' + imDB)
         .then(function(resp) {
 
         	console.log(resp.data);
